@@ -1,0 +1,33 @@
+{
+  "name": "ts-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArvinYang1925/node-ts-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArvinYang1925/node-ts-demo/issues"
+  },
+  "homepage": "https://github.com/ArvinYang1925/node-ts-demo#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  },
+  "volta": {
+    "node": "20.17.0"
+  }
+}
