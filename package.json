@@ -8,8 +8,8 @@
     "dev": "ts-node-dev src/app.ts",
     "format": "prettier --write \"src/**/*.{js,ts}\"",
     "format:check": "prettier --check \"src/**/*.{js,ts}\"",
-    "lint": "eslint src/**/*.ts",
-    "lint:fix": "eslint src/**/*.ts --fix"
+    "lint": "eslint \"src/**/*.ts\" --format=stylish",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix"
   },
   "repository": {
     "type": "git",
@@ -23,16 +23,20 @@
   },
   "homepage": "https://github.com/ArvinYang1925/node-ts-demo#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9. 0.2",
     "pg": "^8.16.3",
     "typeorm": "^0.3.26",
     "zod": "^4.1.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
+    "@types/bcryptjs": "^2.4.6",
     "@types/dotenv": "^6.1.1",
     "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.3.1",
     "@typescript-eslint/eslint-plugin": "^8.43.0",
     "@typescript-eslint/parser": "^8.43.0",

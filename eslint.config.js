@@ -21,12 +21,13 @@ module.exports = [
     rules: {
       ...js.configs.recommended.rules, // ESLint 基本規則
       ...tsPlugin.configs.recommended.rules, // TypeScript 推薦規則
-      ...prettier.rules, // 關掉與 Prettier 衝突的規則
+      ...prettier.rules, // 正確使用 prettier 配置
       "prettier/prettier": "error", // Prettier 格式錯誤會顯示
       semi: ["error", "always"], // 行尾一定要有分號
       quotes: ["error", "double"], // 用雙引號
       "no-var": "error", // 不准用 var
       "@typescript-eslint/no-unused-vars": ["error"], // 不准有沒用到的變數
+      "@typescript-eslint/no-explicit-any": "error", // 禁止使用 any 類型
       // 改用 TypeScript 版本的 func-style
       "func-style": ["error", "declaration", { allowArrowFunctions: true }],
       // 禁止一般函式表達式
