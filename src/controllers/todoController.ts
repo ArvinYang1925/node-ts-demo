@@ -3,6 +3,7 @@ import { AuthRequest } from "../middleware/isAuth";
 import { AppDataSource } from "../config/db";
 import { Todo } from "../entities/Todo";
 import { createTodoSchema, updateTodoSchema } from "../validator/todoValidation";
+import logger from "../utils/logger";
 
 const todoRepository = AppDataSource.getRepository(Todo);
 
@@ -45,6 +46,7 @@ export async function createTodo(req: AuthRequest, res: Response, next: NextFunc
       data: saved,
     });
   } catch (err) {
+    logger.error(err);
     next(err);
   }
 }
