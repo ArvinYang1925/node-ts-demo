@@ -16,6 +16,9 @@ export class User {
   @Column({ type: "varchar", length: 72, nullable: false })
   password!: string;
 
+  @Column({ type: "varchar", length: 10, nullable: true })
+  phone?: string;
+
   @Column({ name: "profile_url", length: 2048, nullable: true })
   profileUrl?: string;
 
